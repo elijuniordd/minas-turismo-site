@@ -1,0 +1,70 @@
+{
+  "cidades": [
+    { 
+      "id": 1,
+      "nome": "Araxá", 
+      "estado": "MG", 
+      "populacao": 111684,
+      "lugares": [
+        { "nome": "Praça do São Sebastião", "descricao": "Praça central da cidade, com uma bela igreja e área verde." },
+        { "nome": "Museu Calmon Barreto", "descricao": "Museu dedicado à história e cultura da cidade." },
+        { "nome": "Termas de Araxá", "descricao": "Famosas fontes termais com propriedades medicinais." }
+      ]
+    },
+    { 
+      "id": 2,
+      "nome": "Ouro Preto",
+      "estado": "MG",
+      "populacao": 74522,
+      "lugares": [
+        { "nome": "Igreja de São Francisco de Assis", "descricao": "Uma das mais importantes igrejas barrocas do Brasil." },
+        { "nome": "Museu da Inconfidência", "descricao": "Museu que conta a história da Inconfidência Mineira." },
+        { "nome": "Praça Tiradentes", "descricao": "Praça central com várias construções históricas." }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Campos Altos",
+      "estado": "MG",
+      "populacao": 12979,
+      "lugares": [
+        { "nome": "Igreja Matriz de São Sebastião", "descricao": "Igreja histórica da cidade." },
+        { "nome": "Santuário da Nossa Senhora Aparecida", "descricao": "Segundo maior santuário do Brasil." },
+        { "nome": "Cascata do Rio das Velhas", "descricao": "Cascata localizada nas proximidades da cidade." }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Belo Horizonte",
+      "estado": "MG",
+      "populacao": 2316850,
+      "lugares": [
+        { "nome": "Praça da Liberdade", "descricao": "Praça central com várias atrações culturais." },
+        { "nome": "Mercado Central", "descricao": "Famoso mercado com produtos típicos de Minas Gerais." },
+        { "nome": "Parque das Mangabeiras", "descricao": "Parque urbano com áreas verdes e trilhas." }
+      ] 
+    },
+    {
+      "id": 5,
+      "nome": "Tiradentes",
+      "estado": "MG",
+      "populacao": 7580,
+      "lugares": [
+        { "nome": "Igreja Matriz de Santo Antônio", "descricao": "Igreja barroca com rica decoração." },
+        { "nome": "Centro Histórico", "descricao": "Área preservada com várias construções coloniais." },
+        { "nome": "Chafariz de São José", "descricao": "Chafariz histórico localizado na praça central." }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Uberlândia",
+      "estado": "MG",
+      "populacao": 713240,
+      "lugares": [
+        { "nome": "Parque do Sabiá", "descricao": "Parque urbano com áreas de lazer e esportes." },
+        { "nome": "Mercado Municipal", "descricao": "Mercado com produtos típicos da região." },
+        { "nome": "Igreja de São José", "descricao": "Igreja histórica da cidade." }
+      ]
+    }
+  ]
+}

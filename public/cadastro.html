@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Cidade e Lugar Turístico - Minas Bão para Visitar</title>
+    <link rel="stylesheet" href="assets/css/style-cadastro.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastrar Nova Cidade e Lugares Turísticos</h1>
+        </header>
+
+        <main>
+            <section class="form-section">
+                <form id="formCadastroDestinacao">
+
+                    <fieldset class="fieldset-grupo">
+                        <legend>Sobre a Cidade</legend>
+                        <div class="form-group">
+                            <label for="nomeCidade">Nome da Cidade:</label>
+                            <input type="text" id="nomeCidade" name="nomeCidade" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="estadoCidade">Estado:</label>
+                            <select id="estadoCidade" name="estadoCidade" required>
+                                <option value="MG" selected>Minas Gerais</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="regiaoMinas">Região de Minas:</label>
+                            <select id="regiaoMinas" name="regiaoMinas">
+                                <option value="">Selecione a região...</option>
+                                <option value="central">Metropolitana / Central</option>
+                                <option value="sul">Sul de Minas</option>
+                                <option value="triangulo">Triângulo Mineiro</option>
+                                <option value="alto_paranaiba">Alto Paranaíba</option>
+                                <option value="zona_mata">Zona da Mata</option>
+                                <option value="norte">Norte de Minas</option>
+                                <option value="jequitinhonha_mucuri">Jequitinhonha / Mucuri</option>
+                                <option value="noroeste">Noroeste de Minas</option>
+                                <option value="oeste">Oeste de Minas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="descricaoCidade">Descrição da Cidade:</label>
+                            <textarea id="descricaoCidade" name="descricaoCidade" rows="4"
+                                placeholder="Conte um pouco sobre a cidade, sua história, cultura..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="urlFotoCidade">URL da Foto Principal da Cidade:</label>
+                            <input type="url" id="urlFotoCidade" name="urlFotoCidade"
+                                placeholder="https://exemplo.com/foto_cidade.jpg">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldset-grupo">
+                        <legend>Lugar Turístico Principal</legend>
+                        <p class="instrucao-fieldset">Adicione informações sobre o principal ponto turístico ou o mais
+                            emblemático desta cidade.</p>
+                        <div class="form-group">
+                            <label for="nomeLugar">Nome do Lugar Turístico:</label>
+                            <input type="text" id="nomeLugar" name="nomeLugar">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipoLugar">Tipo de Lugar:</label>
+                            <select id="tipoLugar" name="tipoLugar">
+                                <option value="">Selecione o tipo...</option>
+                                <option value="cachoeira">Cachoeira</option>
+                                <option value="centro_historico">Centro Histórico</option>
+                                <option value="evento_cultural">Evento Cultural</option>
+                                <option value="gastronomia">Polo Gastronômico</option>
+                                <option value="igreja">Igreja / Monumento Religioso</option>
+                                <option value="mirante">Mirante</option>
+                                <option value="museu">Museu</option>
+                                <option value="parque_natural">Parque Natural / Reserva</option>
+                                <option value="praca">Praça / Ponto de Encontro</option>
+                                <option value="turismo_rural">Turismo Rural / Fazenda</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="descricaoLugar">Descrição do Lugar Turístico:</label>
+                            <textarea id="descricaoLugar" name="descricaoLugar" rows="3"
+                                placeholder="Descreva o que torna este lugar especial."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="urlFotoLugar">URL da Foto do Lugar Turístico:</label>
+                            <input type="url" id="urlFotoLugar" name="urlFotoLugar"
+                                placeholder="https://exemplo.com/foto_lugar.jpg">
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn-submit">Cadastrar Destinação</button>
+                </form>
+                <p id="mensagemStatus" class="status-message"></p>
+            </section>
+
+            <section class="table-section">
+                <h2>Destinações Cadastradas</h2>
+                <table id="tabelaDestinacoes">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Cidade</th>
+                            <th>Região</th>
+                            <th>Lugar Principal</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabelaDestinacoes"></tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+        <p>Copyright © 2025 | Eli Júnior D. D.</p>       
+         </footer>
+    </div>
+    <script src="assets/scripts/app_cadastro_destinacao.js"></script>
+</body>
+
+</html>

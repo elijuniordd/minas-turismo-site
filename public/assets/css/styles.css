@@ -1,0 +1,386 @@
+html{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+/* Fim -Configurações universais */
+.header a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
+.header a:hover{
+    color: rgb(0, 0, 0);
+}
+.header img{
+    width: 100px;
+    height: 100px;
+}
+.menu{
+    display: flex; 
+    align-items: center;
+} 
+.pesquisa{
+    margin-right: 20px; 
+}
+h1{
+    margin-top: 20px;
+}
+.header{
+    display: flex;
+    background-color:#0f6413;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: #639966 solid 5px;
+}
+.menu-principal{
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+/* CSS Header - Fim */
+
+/* CSS Principal - Início */
+.main{
+    padding: 20px;
+}
+#carrosel p,h5{
+    color: #024928;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#carrosel img{
+    width: 50%;
+    height: auto;
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+.body h2,h3{
+    color: #2e302e;
+}
+.body h1{
+    padding-top: 40px;
+    color: #2e302e;
+}
+.introducao img{   
+    padding: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+}
+.lugares-destaque img{
+    padding: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+}
+
+section p{
+    margin: 10px 50px;
+    color: rgb(71, 70, 70);
+}
+main button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+article h3{
+    text-align: center;
+}
+article p{
+    color: rgb(66, 65, 65);
+}
+article button{
+    margin: 5px 10px;
+    margin-right: auto;
+}
+.cidades {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+.cidade1, .cidade2, .cidade3, .cidade4, .cidade5, .cidade6{
+    border: #0f6413 solid 3px;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 30%;
+    border-radius: 25px;
+}
+/* CSS Rodapé - Início*/
+.rodape{
+    background: #0f6413;
+    color: white;
+    text-align: center;
+}
+.rodape p{
+    font-size: small;
+}
+.rodape ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.rodape ul li{
+    margin-left: 9px;
+    font-size: 89%;
+}
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+.rodape a:hover{
+    color: rgb(0, 0, 0);
+}
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .pesquisa-menu{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 805px) {
+    .pesquisa{
+        display: none;
+    }
+    h1{
+        margin-top: 100px !important;
+    }
+    body .header{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+
+        }
+    body .header .pesquisa {
+        display: none;
+    }
+    
+    .header nav {
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .menu-principal{
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background-color: rgba(0, 0, 0, 0.7); 
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+    }
+    .menu-principal li{
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .menu-principal li a{
+        display: block;
+        text-align: center;
+        font-size: 110%;
+
+    }
+    .menu-icon{
+        display: block;
+        color: white;
+        width: 50px;
+        height: inherit;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        line-height: 60px;
+        z-index: 999;
+        padding-top: 40px;
+    }
+    #carrosel{
+        z-index: -299;
+    }
+    .menu-icon i{
+        font-size: 2rem;
+    }
+    #menu-toggle:checked ~ label i:nth-child(2) {
+        display: block;
+    }
+    #menu-toggle:checked ~ label i:first-child {
+        display: none;
+    }
+    #menu-toggle:not(:checked) ~ label i:first-child {
+        display: block;
+    }
+    #menu-toggle:not(:checked) ~ label i:nth-child(2) {
+        display: none;
+    }
+    #menu-toggle:checked ~ ul {
+    height: 100%;
+    }
+}
+.header-detalhes h1{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+.header-detalhes img{
+    width: 100px;
+    height: 100px;
+    padding-left: 10px;
+}
+.header-detalhes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a5a0a;
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+    border-bottom: #639966 solid 5px;
+    padding: 0px;
+}
+.detalhes-cidade img{
+    padding: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+.header-detalhes a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-right: 20px;
+}
+.header-detalhes a:hover{
+    border-radius: 5px;
+    border: #024928 solid 2px; 
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+}
+.footer-detalhes{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #3a3939;
+}
+#detalhes{
+    margin: 20px;
+}
+.detalhes-cidade h2 {
+    font-size: 28px;
+    color: #1b1b1b;
+    margin-bottom: 10px;
+}
+.detalhes-cidade p {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}  
+.detalhes-cidade ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.detalhes-cidade ul li {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+#detalhes{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+.detalhes-cidade{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+/*Informações sobre aluno*/
+.informacoes-aluno {
+    margin-top: 50px;
+    border-top: #2e302e solid 5px;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.informacoes-aluno h2 {
+    font-size: large;
+}
+
+.informacoes-aluno h3 {
+    font-size: medium;
+}
+
+.autoria {
+    display: flex;
+    align-items: center; /* Centraliza a foto e texto na vertical */
+    gap: 20px; 
+}
+
+.info-aluno p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.foto-autor {
+    width: 280px; 
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+.redes-sociais-direita { /* Corrigido o nome */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.informacoes-aluno ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 1.5rem;
+    padding: 0;
+}
+

@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.09);
+}
+
+header h1 {
+    color: #1D592C;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.form-section,
+.table-section {
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 1px solid #e0e4e8;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+.form-section h2,
+.table-section h2 {
+    color: #2A6F33;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 12px;
+    font-size: 1.7em;
+}
+
+.fieldset-grupo {
+    border: 1px solid #d1d9e0;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.fieldset-grupo legend {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #1D592C;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.instrucao-fieldset {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-left: 3px solid #4CAF50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333333;
+    background-color: #fdfdfd;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="url"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.25);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto 0 auto;
+    background-color: #2E7D32;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.15em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit:hover {
+    background-color: #1D592C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-submit:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-message {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.table-section h2 {
+    color: #2A6F33;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 12px;
+    font-size: 1.7em;
+}
+
+#tabelaDestinacoes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+#tabelaDestinacoes th,
+#tabelaDestinacoes td {
+    border: 1px solid #dee2e6;
+    padding: 14px 16px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 0.95em;
+}
+
+#tabelaDestinacoes thead th {
+    background-color: #2E7D32;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+#tabelaDestinacoes tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+#tabelaDestinacoes tbody tr:hover {
+    background-color: #e9f5ec;
+}
+
+.btn-action {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-right: 6px;
+    color: white;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.btn-action:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn-edit {
+    background-color: #007bff;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e4e8;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+        margin: 15px auto;
+    }
+
+    header h1 {
+        font-size: 1.9em;
+    }
+
+    .fieldset-grupo legend {
+        font-size: 1.15em;
+    }
+
+    .btn-submit {
+        font-size: 1.05em;
+        padding: 12px 20px;
+    }
+
+    #tabelaDestinacoes,
+    #tabelaDestinacoes thead,
+    #tabelaDestinacoes tbody,
+    #tabelaDestinacoes th,
+    #tabelaDestinacoes td,
+    #tabelaDestinacoes tr {
+        display: block;
+    }
+
+    #tabelaDestinacoes thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #tabelaDestinacoes tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        background-color: #fff !important;
+    }
+
+    #tabelaDestinacoes td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 45% !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        text-align: right;
+        min-height: 38px;
+    }
+
+    #tabelaDestinacoes td:before {
+        content: attr(data-label);
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        width: 40%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: #2E7D32;
+        transform: translateY(-50%);
+    }
+
+    #tabelaDestinacoes td:last-child {
+        padding-left: 10px !important;
+        text-align: center;
+    }
+
+    #tabelaDestinacoes td:last-child:before {
+        content: "";
+    }
+}
